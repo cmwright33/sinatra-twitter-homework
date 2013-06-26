@@ -38,7 +38,7 @@ configure do
   end
 end
 
-get '/tweets/chris' do
+get '/tweets/:username' do
   # This gets the username from the params hash
   @username = params[:username]
 
