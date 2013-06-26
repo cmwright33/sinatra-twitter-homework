@@ -1,7 +1,7 @@
-<h1>Check what people are tweeting about</h1>
+<h1>Check what <%=@username%> is tweeting about</h1>
 
 <%= @my_tweets[0][:user][:description]%>
-<form action="/" method="post">
+<form action="/" method="get">
 <form input="text" title="username" autofocus>
 </form>
 <button>Enter a Username</button>
