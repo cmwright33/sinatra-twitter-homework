@@ -1,12 +1,13 @@
-<h1>Here are </h1>
+<h1>Check what people are tweeting about</h1>
 
-<form input="text" title="username" autofocus>
-<button>us this button</button>
+<form input="text" title="username" autofocus></form>
+<button>Enter a Username</button>
   <ul>
   <% @my_tweets.each do |tweet| %>
   <li> <%= tweet[:text] %> </li>
-    <%end%>
     <%= tweet.media.first[:media_url] unless tweet[:media].empty? %>
+    <a href="www.twitter.com/"<%=tweet[:username]%>/<%=tweet[:staus]%>/<%=tweet[:id]%></a>
+     <%end%>
   </ul>
 
 
