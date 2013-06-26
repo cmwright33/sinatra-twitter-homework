@@ -38,7 +38,7 @@ configure do
   end
 end
 
-get '/tweets/:username' do
+get '/tweets/chris' do
   # This gets the username from the params hash
   @username = params[:username]
 
@@ -48,8 +48,8 @@ get '/tweets/:username' do
 
   # The following 3 lines will output the text from each tweet from a user
   @my_tweets.each do |tweet|
-    tweet[:text]
-  end
+     tweet[:text]
 
+  end
   erb :tweets
 end

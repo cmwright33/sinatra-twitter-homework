@@ -1,0 +1,14 @@
+<h1>Here are </h1>
+
+<form input="text" title="username" autofocus>
+<button>us this button</button>
+  <ul>
+  <% @my_tweets.each do |tweet| %>
+  <li> <%= tweet[:text] %> </li>
+    <%end%>
+    <%= tweet.media.first[:media_url] unless tweet[:media].empty? %>
+  </ul>
+
+
+
+
