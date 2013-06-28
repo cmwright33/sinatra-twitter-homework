@@ -8,7 +8,7 @@
   <ul>
   <% @my_tweets.each do |tweet| %>
   <li> <%= tweet[:text] %> </li>
-    <%= tweet.media.first[:media_url] unless tweet[:media].empty? %>
+    <p><%= tweet.media.first[:media_url] unless tweet[:media].empty? %></p>
     <a href="www.twitter.com/<%=tweet[:user][:screen_name]%>/status/<%=tweet[:id]%>"</a>
      <%end%>
   </ul>
